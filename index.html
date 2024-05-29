@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha_webui</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/extra.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dock_container">
+        <div class="upper_dock_part" id="user_icon_dock">
+          <div class="dock_icons">
+            <i class="fa-solid fa-circle-user inactive_icon"></i>
+          </div>
+        </div>
+        <div class="mid_dock_part">
+          <div class="dock_icons">
+            <i class="fa-solid fa-house active_icon"></i>
+            <!-- <span class="tooltip">Home</span> -->`
+          </div>
+          <div class="dock_icons">
+            <i class="fa-solid fa-paper-plane inactive_icon"></i>
+            <!-- <span class="tooltip">Chat</span> -->
+          </div>
+          <div class="dock_icons">
+            <i class="fa-solid fa-inbox inactive_icon"></i>
+            <!-- <span class="tooltip">Models</span> -->
+          </div>
+          <div class="dock_icons">
+            <i class="fa-solid fa-bell inactive_icon"></i>
+            <!-- <span class="tooltip">Notifiactions</span> -->
+          </div>
+          <div class="dock_icons">
+            <i class="fa-solid fa-ellipsis inactive_icon"></i>
+            <!-- <span class="tooltip"></span> -->
+          </div>
+        </div>
+        <div class="bottom_dock-part" id="setting_dock_div">
+          <div class="dock_icons">
+            <i class="fa-solid fa-gear inactive_icon"></i>
+            <!-- <span class="tooltip">Setting</span> -->
+          </div>
+        </div>
+      </div>
+      <div class="sections_holder">
+        <!-- section for holding showing chat history and other -->
+        <div class="section_a">
+          <div class="section_a_search-container">
+            <div class="section_a_search_input">
+              <input
+                type="text"
+                name=""
+                id="search_input_box"
+                placeholder="Search..."
+                class="seation_a_search"
+              />
+            </div>
+            <div class="section_a_search_btn">
+              <i class="fa-solid fa-magnifying-glass inactive_icon"></i>
+            </div>
+          </div>
+
+          <div class="new_model_chat_container" id="new_model_chat_container">
+            <div class="newchat_icon_container">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="newchat_container">Start new chat</div>
+          </div>
+          <div class="section_a_chat_container">
+            <!-- <div class="section_a_chat_breif_container">
+                        <div class="chat_breif_holder">
+                            <span class="chat_breif">20</span>
+                        </div>
+                    </div> -->
+                    
+            <div class="section_a_chats_holder" id="section_a_chats_holder">
+              <div class="section_a_chats">
+                <div class="chat_title">
+                  <span class="chat_model_title">
+                    <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                  </span>
+                  <span class="time_of-active">
+                    <i class="fa-solid fa-rotate-right"></i>
+                  </span>
+                </div>
+                <div class="chat_model_status">
+                  <span class="status_icons"
+                    ><i class="fa-solid fa-circle model_status_active"></i
+                  ></span>
+                  loading.....
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section_b" id="section_b">
+          <div class="chat_header_section" id="chat_header_section">
+            <div class="section_b_chat_title_holder_container">
+              <div class="_section_b_chat_title_container">
+                <div class="chat_model_name_curently_active">
+                  <div class="chat_model_name" id="chat_model_name_div">
+                    <span id="chat_model_name">Phi</span>
+                  </div>
+                  <div class="chat_model_brief_status">
+                    <span class="status_icons"
+                      ><i class="fa-solid fa-circle model_status_active"></i
+                    ></span>
+                    <span id="modal_status_current">active</span>
+                  </div>
+                </div>
+                <div class="chat_model_name-brief_container">
+                  <i class="fa-solid fa-ellipsis inactive_icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat_container" id="chat_container_div">
+            <!-- <div class="user_prompt_container_holder">
+                            <div class="user_prompt_container">
+                                <span class="user_name_holder">user_name</span>
+                                <div class="user_prompt">
+                                    <span>Hii how are you?</span>
+                                </div>
+                                <div class="user_prompt_other_details">
+                                    <span class="user_prompt_time">12:23</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="model_response_container_holder">
+                            <div class="model_response_container">
+                                <span class="model_name_holder">Mistral</span>
+                                <div class="model_response">
+                                    <span class="promt_holder_message" id="prompt_message">
+                                        Hey I am fine How can I Assist you !
+                                    </span>
+                                </div>
+                                <div class="model_other_details">
+                                    <span class="response_time">12:23</span>
+                                </div>
+                            </div>
+                        </div> -->
+          </div>
+          <div class="chat_input_container">
+            <div class="user_prompt_input">
+              <input
+                type="text"
+                name="prompt"
+                class="input_prompt_input"
+                id="user_prompt"
+                placeholder="message here"
+              />
+            </div>
+            <div class="input_mic_container input_icon">
+              <i class="fa-solid fa-face-smile inactive_icon"></i>
+            </div>
+            <div class="input_mic_container input_icon">
+              <i class="fa-solid fa-microphone inactive_icon"></i>
+            </div>
+            <div class="input_send_submit icput_icon" id="input_send_sumbit">
+              <i class="fa-solid fa-paper-plane inactive_icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="setting_overlap_modal" id="setting_overlap_modal">
+      <div class="setting_modal_content">
+        <span class="close" id="setting_modal_close_btn">&times;</span>
+        <div class="setting_pannel_container">
+          <h3>Setting</h3>
+          <div class="modal_list_fetch">
+            <div class="modal_list_container" id="modal_list_container">
+              <h4>List:</h4>
+              <button class="modal_fetch_btn" id="modal_fetch_btn">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+              <div id="list_org_container"></div>
+            </div>
+          </div>
+          <!-- <div class="pull-new_model_div">
+                    <h4>Pull Models</h4>
+                    <input type="text" class="model_pull-input" id="model_pull_name"> 
+                    <button class="pull_model_name_btn" id="pull_model_name_btn">Pull</button>
+                </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="newchat_overlap">
+      <div class="newchat_modal_container">
+        <span class="close" id="newchat_modal_close_btn">&times;</span>
+        <div class="newchat_contnet">
+          <h3>Select model</h3>
+          <div class="newchat_model_list" id="newchat_model_list">
+            <select name="model" id="model_list_newchat" class="newchat_new_session">Select model</select>
+            <div>
+              <button class="start_newchat" id="start_newchat_go">Start</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/0d194b00b9.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script/main.js"></script>
+  <script src="script/feature.js"></script>
+</html>
