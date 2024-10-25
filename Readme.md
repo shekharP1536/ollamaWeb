@@ -55,7 +55,7 @@ Ollama run llama2
 Just colne this repo and open index.html
 
 ```bash 
-git clone https://github.com/shekharP1536/Alpha_ui.git
+git clone [https://github.com/shekharP1536/Alpha_ui.git](https://github.com/shekharP1536/ollamaWeb.git)
 ```
 And open index.html
 
